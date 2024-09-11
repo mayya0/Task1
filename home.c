@@ -2,18 +2,18 @@
 void main()
 {
 	setlocale(LC_CTYPE, "RUS");
-	puts("                                  ");
-	puts("                                  ");
-	puts("                ////\             ");
-	puts("               / \   \            ");
-	puts("              /   \   \           ");
-	puts("             /     \   \          ");
-	puts("            /       \  /|         ");
-	puts("            ---------./ |         ");
-	puts("           |         |  |         ");
-	puts("           |         |  |         ");
-	puts("           |         | /          ");
-	puts("           '---------'            ");
-	puts("                                  ");
+	puts("                                    ");
+	puts("                                    ");
+	puts("                ////\\              ");
+	puts("               / \\   \\            ");
+	puts("              /   \\   \\           ");
+	puts("             /     \\   \\          ");
+	puts("            /       \\  /|          ");
+	puts("            ---------./ |           ");
+	puts("           |         |  |           ");
+	puts("           |         |  |           ");
+	puts("           |         | /            ");
+	puts("           '---------'              ");
+	puts("                                    ");
 
 }
