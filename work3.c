@@ -13,6 +13,8 @@
 #define M3 7.468
 #define M4 7.4126
 
+#define R 3.17
+
 
 
 #include <math.h>
@@ -23,7 +25,17 @@ int main()
 	setlocale(LC_CTYPE, "RUS");
 	
 	system("pause");
+	home();
+	system("pause");
+	task1();
+	system("pause");
+	task2();
+	system("pause");
+	task21();
+	system("pause");
 	task3();
+	system("pause");
+	home();
 }
 int task1()
 {
@@ -117,6 +129,17 @@ int task3()
 	printf("-------------------\n");
 	printf("| %.1f| %.1f | %.1f |\n", result, result1, result2);
 
+
+
+}
+int home()
+{
+	int r;
+	float result;
+	puts("\n введите число радиан");
+	scanf("%d", &r);
+	result = (r/2) * R*R;
+	printf(" Площадь сектора равна %d  ", result);
 
 
 }
