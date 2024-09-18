@@ -25,8 +25,6 @@ int main()
 	setlocale(LC_CTYPE, "RUS");
 	
 	system("pause");
-	home();
-	system("pause");
 	task1();
 	system("pause");
 	task2();
