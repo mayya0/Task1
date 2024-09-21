@@ -14,13 +14,13 @@ int main()
 int task1()
 {
 	
-	char c;
-	int i;
+	/*char c;
+	int i;*/
 	float f;
-	double d;
+	/*double d;*/
 	
 
-	puts("введите число");
+	/*puts("введите число");
 	scanf("%c", &c);
 	printf("%c \n", c);
 	
@@ -31,12 +31,15 @@ int task1()
 	puts("введите число");
 	scanf("%g", &f);
 	printf("%g \n", f);
-	printf(" Целая часть числа %g - %.1f \n", f, f);
-	printf(" Дробная часть числа %g - %g \n", f, f);
 	
 	puts("введите число");
 	scanf("%lg", &d);
-	printf("%lg \n", d);
+	printf("%lg \n", d);*/
+
+	puts("введите число");
+	scanf("%g", &f);
+	printf(" Целая часть числа %g - %.1g \n", f, f);
+	printf(" Дробная часть числа %g - %g \n", f, f - (int)f);
 	
 
 }
