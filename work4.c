@@ -8,11 +8,11 @@ int main()
 
 {
 	setlocale(LC_CTYPE, "RUS");
-	/*task1();
+	task1();
 	system("pause");
 	task2();
 	system("pause");
-	task3();*/
+	task3();
 	system("pause");
 	home();
 
