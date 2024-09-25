@@ -8,11 +8,11 @@ int main()
 
 {
 	setlocale(LC_CTYPE, "RUS");
-	task1();
+	/*task1();
 	system("pause");
 	task2();
 	system("pause");
-	task3();
+	task3();*/
 	system("pause");
 	home();
 
@@ -73,12 +73,16 @@ int home()
 	scanf("%f",&R);
 	puts("Введите процент\n");
 	scanf("%f",&W);
-	float summ1month = R + (W*R)/100;
-	float proc2 = R+ W*(R+(W*R)/100)/100;
-	float proc3 = R+ W*(R+W*(R+(W*R)/100)/100)/100;
-	float proc6 = R+ W*(R+W*(R+W*(R+(W*R)/100)/100)/100)/100;
-	printf("Через два месяца у клиента будет %f рублей\n",proc2);
-	printf("Через три месяца у клиента будет %f рублей\n", proc3);
-	printf("Через пол года у клиента будет %f рублей\n", proc6);
+
+	float summ1month = R+ W*(R/100);
+	float summ2month = summ1month + W*(summ1month/100);
+	float summ3month = summ2month + W*(summ2month/100);
+	float summ4month = summ3month + W*(summ3month/100);
+	float summ5month = summ4month + W*(summ4month/100);
+	float summ6month = summ5month + W*(summ5month/100);
+
+	printf("Через два месяца у клиента будет %f рублей\n", summ2month);
+	printf("Через три месяца у клиента будет %f рублей\n", summ3month);
+	printf("Через пол года у клиента будет %f рублей\n", summ6month);
 
 }
