@@ -1,5 +1,6 @@
 #define _USE_MATH_DEFINES
 #define _CRT_SECURE_NO_DEPRECATE
+#define M_PI            3.14159265358979323846
 #include <stdio.h>
 #include <locale.h>
 #include <math.h>
@@ -12,6 +13,7 @@ int main()
 	task1();
 	task2var13();
 	task3var29();
+	zvezdochka();
 
 
 }
@@ -67,5 +69,21 @@ int task3var29()
 	else
 	{
 		printf("\nЧисла %d%d не являются двухзначным\n", x,y);
+	}
+}
+int zvezdochka()
+{
+	double x, y;
+	puts("Введите координаты точки (x, y): ");
+	scanf("%lf %lf", &x, &y);
+
+
+	if (pow(x,2)+pow(y,2) <= 36 && x>=0 && y>=0 && pow(x, 2)+pow(y, 2) > 9)
+	{
+		printf("Точка принадлежит заштрихованной области.\n");
+	}
+	else 
+	{
+		printf("Точка не принадлежит заштрихованной области.\n");
 	}
 }
