@@ -7,16 +7,14 @@
 #include <stdio.h>
 
 int main()
-
 {
 	setlocale(LC_CTYPE, "RUS");
 	/*task1();*/
-	task2();
+	/*task2();*/
 	home();
 }
 
 int task1()
-
 {
 	char c;
 	printf("Введите символ ");
