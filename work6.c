@@ -34,28 +34,23 @@ int task1()
 }
 int task2var13()
 {
-	int x;
+	int x,y;
 	printf("\nВведите x\n");
 	scanf("%d", &x);
-	if (x > 3)
-	{
-		printf("\n%d\n", (- 3 * x) + 9);
-	}
-	else
-	{
-		printf("\n%d\n", pow(x,3)/(pow(x,2)+8));
-	}
+	y = x > 3 ? (x / (x * x + 1)) : (-(x * x) + 3 * x + 9);
+	printf("%d", y);
+
 }
 int task3var29()
 {
 	int x;
-	
+
 	printf("\nВведите x\n");
 	scanf("%d", &x);
 	int y;
 	printf("\nВведите y\n");
 	scanf("%d", &y);
-	if ( 9>x>100 && 9>y>100)
+	if (9 > x > 100 && 9 > y > 100)
 	{
 		if (x * y > 2000)
 		{
@@ -68,7 +63,7 @@ int task3var29()
 	}
 	else
 	{
-		printf("\nЧисла %d%d не являются двухзначным\n", x,y);
+		printf("\nЧисла %d%d не являются двухзначным\n", x, y);
 	}
 }
 int zvezdochka()
@@ -78,11 +73,11 @@ int zvezdochka()
 	scanf("%lf %lf", &x, &y);
 
 
-	if (pow(x,2)+pow(y,2) <= 36 && x>=0 && y>=0 && pow(x, 2)+pow(y, 2) > 9)
+	if (pow(x, 2) + pow(y, 2) <= 36 && x >= 0 && y >= 0 && pow(x, 2) + pow(y, 2) > 9)
 	{
 		printf("Точка принадлежит заштрихованной области.\n");
 	}
-	else 
+	else
 	{
 		printf("Точка не принадлежит заштрихованной области.\n");
 	}
