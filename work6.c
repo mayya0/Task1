@@ -10,10 +10,10 @@ int main()
 
 {
 	setlocale(LC_CTYPE, "RUS");
-	task1();
+	//task1();
 	task2var13();
-	task3var29();
-	zvezdochka();
+	//task3var29();
+	//zvezdochka();
 
 
 }
@@ -34,11 +34,12 @@ int task1()
 }
 int task2var13()
 {
-	int x,y;
+	float x,y;
 	printf("\nВведите x\n");
-	scanf("%d", &x);
-	y = x > 3 ? (x / (x * x + 1)) : (-(x * x) + 3 * x + 9);
-	printf("%d", y);
+	scanf("%f", &x);
+	y = x <= 3 ? (-pow(x,2) + 3*x + 9) : (x/(pow(x,2)+1));
+	/*Крольный пример: если x=2, то y=11        если x=7, то y=0,14  */
+	printf("%.2f", y);
 
 }
 int task3var29()
