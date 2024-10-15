@@ -126,7 +126,7 @@ int task2()
 int home()
 
 {
-	
+
 	int chas;
 	printf("\n Который у вас час \n");
 	scanf("%d", &chas);
