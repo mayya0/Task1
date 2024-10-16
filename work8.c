@@ -112,15 +112,25 @@ task2var5()
 
 	double start = 0.1;
 	double end = 2.2;
+	double step;
+	double x;
+	printf("\nВведите значение шага табуляции\n");
+	scanf("%lf", &step);
+
+	printf("\n Функция: y=x^2 - cos^2(x+1)\n");
+	
+	for (x=start ; x <= end; x += step) {
+		printf("| %.1lf | %lf |\n", x, pow(x,2) - pow(cos(x - 1), 2));
+	}
+}
+task3var3()
+{
+
+	double start = 1;
+	double n;
 	double step = 0.1;
 	double x;
 	printf("\nВведите значение шага табуляции\n");
 	scanf("%lf", &x);
 
-	printf("\n Функция: y=x^2 - cos^2(x+1)\n");
-	
-	for (x; x <= end; x += step) {
-		printf("| %lf | %lf |\n", x, x* x - pow(cos(x - 1), 2));
-	}
-	    printf("|__________|__________|\n");
 }
