@@ -11,10 +11,10 @@ int main()
 	setlocale(LC_CTYPE, "RUS");
 	/*task0();
 	task2zvezd();
-	task3zvezd();*/
+	task3zvezd();
 	taskramochka();
 	task1();
-	task1a();
+	task1a();*/
 	task2var5();
 }
 
@@ -109,9 +109,18 @@ task1a()
 }
 task2var5()
 {
-	float f;
-	printf(" Функция: y=x^2 - cos^2(x+1)");
-	scanf("%f", &f);
-	for (int start = 1; start <= 1; start++) putchar('+');
-	printf(" Введите значение шага");
+
+	double start = 0.1;
+	double end = 2.2;
+	double step = 0.1;
+	double x;
+	printf("\nВведите значение шага табуляции\n");
+	scanf("%lf", &x);
+
+	printf("\n Функция: y=x^2 - cos^2(x+1)\n");
+	
+	for (x; x <= end; x += step) {
+		printf("| %lf | %lf |\n", x, x* x - pow(cos(x - 1), 2));
+	}
+	    printf("|__________|__________|\n");
 }
