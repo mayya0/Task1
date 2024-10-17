@@ -4,7 +4,7 @@
 #include <locale.h>
 #include <math.h>
 #include <conio.h>
-#include <stdio.h>
+
 
 int main()
 {
@@ -14,8 +14,9 @@ int main()
 	task3zvezd();
 	taskramochka();
 	task1();
-	task1a();*/
-	task2var5();
+	task1a();
+	task2var5();*/
+	task3var3();
 }
 
 int task0()
@@ -125,12 +126,23 @@ task2var5()
 }
 task3var3()
 {
+	double a,n, s=0;
+	double d = 1;
 
-	double start = 1;
-	double n;
-	double step = 0.1;
-	double x;
-	printf("\nВведите значение шага табуляции\n");
-	scanf("%lf", &x);
+	printf("Введите значение a: ");
+	scanf("%lf", &a);
+
+	printf("Введите значение n: ");
+	scanf("%lf", &n);
+
+	
+	for (int i = 0; i <= n; i++) {
+		if (i > 0) {
+			d *= (a + i); // Умножаем на текущий член
+		}
+		s += 1.0 / d; // Добавляем текущий член ряда
+	}
+
+	printf("Значение ряда: %lf\n", s);
 
 }
